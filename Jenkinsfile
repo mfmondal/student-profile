@@ -8,6 +8,7 @@ pipeline{
        stage('GetCode'){
             steps{
                // git 'https://github.com/mfmondal/student-profile.git'
+               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mfmondal/student-profile.git']])
             }
          }        
        stage('Build'){

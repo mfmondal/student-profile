@@ -1,10 +1,10 @@
-package com.mondal.angular10.springboot;
+package com.mondal.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Angular10SpringbootBackendApplicationTests {
+class StudentProfileApplicationTests {
 
 	@Test
 	void contextLoads() {
