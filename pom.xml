@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mondal.student</groupId>
-	<artifactId>student-service</artifactId>
+	<artifactId>student-profile</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>student-service</name>
+	<name>student-profile</name>
 	<description>Student Profile</description>
 	<properties>
 		<java.version>17</java.version>
@@ -58,7 +58,19 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.4.0.905</version>
+			</plugin>
+			<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.1</version>
+			</plugin>
 		</plugins>
+		<finalName>student-profile</finalName>
 	</build>
 
 </project>
