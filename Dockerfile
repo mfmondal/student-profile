@@ -1,4 +1,6 @@
 FROM openjdk:17
+WORKDIR /opt
 EXPOSE 8081
-ADD target/student-profile.jar student-profile.jar
-ENTRYPOINT ["java","jar","/student-profile.jar"]
+COPY target/student-profile.jar /opt/student-profile.jar
+ENTRYPOINT exec java $JAVA_OPTS -jar student-profile.jar
+
