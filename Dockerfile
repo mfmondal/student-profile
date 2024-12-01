@@ -7,8 +7,8 @@
 #CMD ["java","-jar","/student-profile.jar"]
 
 
-FROM openjdk-17-jre
-
+#FROM openjdk-17-jre
+FROM openjdk:17
 ENV SPRING_OUTPUT_ANSI_ENABLED=ALWAYS \
     SLEEP_TIME=0 \
     JAVA_OPTS=""
