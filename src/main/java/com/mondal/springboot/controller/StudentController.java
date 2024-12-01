@@ -24,7 +24,8 @@ import com.mondal.springboot.entity.Student;
 import com.mondal.springboot.exceptions.ResourceNotFoundException;
 import com.mondal.springboot.repository.StudentRepository;
 	
-@RestController @CrossOrigin(origins = "http://localhost:4200")
+//@RestController @CrossOrigin(origins = "http://localhost:4200")
+@RestController @CrossOrigin(origins = "*")
 @RequestMapping("/api/v1")
 public class StudentController {
     @Autowired
