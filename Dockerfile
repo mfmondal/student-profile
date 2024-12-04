@@ -1,7 +1,7 @@
 FROM openjdk:17
 WORKDIR /opt
 EXPOSE 8081
-COPY  student-profile/student-profile.jar /opt/student-profile.jar
+COPY  /var/lib/jenkins/workspace/student-profile/target/*.jar /opt/student-profile.jar
 #ENTRYPOINT exec java $JAVA_OPTS -jar student-profile.jar
 #ENTRYPOINT ["java","-jar","/student-profile.jar"]
 CMD ["java","-jar","/student-profile.jar"]
